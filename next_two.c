@@ -6,8 +6,6 @@ int next_two(int a){
     while(a>>count){
         count++;
     }
-    printf("1<<count: %d\n", 1<<count);
-    printf("a<<1: %d\n\n", a<<1);
     return (a) ? ((a<<1) - (1<<count)) ? 1<<(count) : a : 0;
 }
 
